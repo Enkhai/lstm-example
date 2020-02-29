@@ -25,6 +25,8 @@ class CharacterDataset(Dataset):
         # character to integer translation
         encoded_text = np.array([self.char2int[ch] for ch in self.original_text])
         # we prepare Xs (inputs) and Ys (targets) beforehand to save computation time
+        # inputs will be one-hot encoded
+        # while targets will remain index-like integers, indicating the correct classes
         self.x_y = [(
             torch.tensor(one_hot_encode(batch[0], len(vocabulary))).to(device),
             torch.tensor(batch[1]).to(device)

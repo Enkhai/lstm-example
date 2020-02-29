@@ -3,6 +3,8 @@
     <words>
       <w>backpropagate</w>
       <w>cuda</w>
+      <w>overfit</w>
+      <w>underfit</w>
     </words>
   </dictionary>
 </component>
