@@ -46,8 +46,6 @@ if __name__ == '__main__':
     validation_loader = DataLoader(validation_data)
 
     # Part 3: modelling
-    # Part 3: modelling
-
     # we create our model
     model = CharRNN(num_chars).to(device)
     # and the initial hidden state (a tensor of zeros)
